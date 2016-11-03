@@ -15,6 +15,7 @@
  */
 package com.zaubersoftware.gnip4j.api.model;
 
+import java.io.Serializable;
 import java.util.List;
 
 import org.codehaus.jackson.annotate.JsonProperty;
@@ -26,7 +27,7 @@ import org.codehaus.jackson.annotate.JsonProperty;
  * @author Juan F. Codagnone
  * @since Mar 3, 2015
  */
-public class VideoInfo {
+public class VideoInfo implements Serializable {
     @JsonProperty(value = "duration_millis")
     private Long durationMillis;
     private List<TwitterVideoVariant> variants;

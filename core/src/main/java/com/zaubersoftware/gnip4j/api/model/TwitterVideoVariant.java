@@ -15,9 +15,10 @@
  */
 package com.zaubersoftware.gnip4j.api.model;
 
+import java.io.Serializable;
 import org.codehaus.jackson.annotate.JsonProperty;
 
-public class TwitterVideoVariant {
+public class TwitterVideoVariant implements Serializable {
     private Integer bitrate;
     @JsonProperty(value = "content_type")
     private String contentType;
